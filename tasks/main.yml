@@ -4,7 +4,7 @@
 - name: Create Symlinks
   become: True
   become_user: "{{ symlinks_user }}"
-  file:
+  ansible.builtin.file:
     src: '{{ item.target }}'
     dest: '{{ item.link }}'
     state: link
