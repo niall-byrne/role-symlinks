@@ -45,7 +45,7 @@ Example Playbook
 ----------------
 
 ```yaml
-- hosts: web
+- hosts: all
   roles:
   - role: osx_provisioner.symlinks
     symlinks_user: "{{ ansible_user_id }}"
