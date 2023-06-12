@@ -16,7 +16,6 @@
           - item.stat.exists
         msg: "{{ item.item.link }} does not exist."
       loop: "{{ check_content.results }}"
-      when: item.item.target != symlinks[0].target
     - name: Assert Files Have Correct Attributes
       ansible.builtin.assert:
         that:
@@ -25,4 +24,3 @@
           - item.stat.path == item.item.link
         msg: "{{ item.item.link }} has wrong attributes."
       loop: "{{ check_content.results }}"
-      when: item.item.target != symlinks[0].target

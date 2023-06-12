@@ -1,7 +1,6 @@
 ---
 
 symlinks_user: "{{ lookup('env', 'USER') }}"
-symlinks_ignore_errors: false
 
 symlinks:
   - link: /Users/{{ symlinks_user }}/test1

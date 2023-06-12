@@ -5,11 +5,14 @@
   become: True
   become_user: "{{ symlinks_user }}"
   ansible.builtin.file:
-    src: '{{ item.target }}'
-    dest: '{{ item.link }}'
+    src: '{{ _role_symlinks_item.target }}'
+    dest: '{{ _role_symlinks_item.link }}'
+    force: '{{ false if "force" not in _role_symlinks_item else _role_symlinks_item.force }}'
+    follow: '{{ true if "force" not in _role_symlinks_item else not _role_symlinks_item.force }}'
     state: link
   loop:
     "{{ symlinks }}"
-  ignore_errors: "{{ symlinks_ignore_errors }}"
+  loop_control:
+    loop_var: _role_symlinks_item
   tags:
     - symlinks
