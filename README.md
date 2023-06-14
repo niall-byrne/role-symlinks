@@ -1,10 +1,10 @@
 # role-symlinks
 
-### Master
-[![role-symlinks](https://github.com/osx-provisioner/role-symlinks/actions/workflows/push.yml/badge.svg?branch=master)](https://github.com/osx-provisioner/role-symlinks/actions/workflows/push.yml)
+### Master Branch
+[![role-symlinks](https://github.com/osx-provisioner/role-symlinks/actions/workflows/workflow-push.yml/badge.svg?branch=master)](https://github.com/osx-provisioner/role-symlinks/actions/workflows/workflow-push.yml)
 
-### Production
-[![role-symlinks](https://github.com/osx-provisioner/role-symlinks/actions/workflows/push.yml/badge.svg?branch=production)](https://github.com/osx-provisioner/role-symlinks/actions/workflows/push.yml)
+### Dev Branch
+[![role-symlinks](https://github.com/osx-provisioner/role-symlinks/actions/workflows/workflow-push.yml/badge.svg?branch=dev)](https://github.com/osx-provisioner/role-symlinks/actions/workflows/workflow-push.yml)
 
 Ansible role that creates the configured symlinks.
 
