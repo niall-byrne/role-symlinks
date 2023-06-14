@@ -14,7 +14,7 @@ version_provider = 'poetry'
 authors = ['Niall Byrne <niall@niallbyrne.ca>']
 description = 'Ansible role that creates the configured symlinks.'
 name = 'role-symlinks'
-version = '0.2.3'
+version = '0.3.0'
 
 [tool.poetry.dependencies]
 python = '^3.9'
